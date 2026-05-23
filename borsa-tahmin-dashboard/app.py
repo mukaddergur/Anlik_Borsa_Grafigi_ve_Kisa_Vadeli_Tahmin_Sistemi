@@ -16,7 +16,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("📈 Anlık Borsa Grafiği ve Kısa Vadeli Tahmin Sistemi")
+st.title(" Anlık Borsa Grafiği ve Kısa Vadeli Tahmin Sistemi")
 st_autorefresh(interval=60000, key="stock_refresh")
 
 def generate_signal(current_price, predicted_price):

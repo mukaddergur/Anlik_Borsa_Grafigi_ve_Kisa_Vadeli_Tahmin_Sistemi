@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 
 def prepare_features(df):
-    """Makine öğrenmesi modeli için teknik indikatörleri (özellikleri) hazırlar."""
     df = df.copy()
 
     df["Daily_Return"] = df["Close"].pct_change()

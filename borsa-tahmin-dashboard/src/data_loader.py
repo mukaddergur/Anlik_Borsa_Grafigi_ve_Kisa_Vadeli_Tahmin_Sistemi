@@ -2,7 +2,6 @@ import pandas as pd
 import yfinance as yf
 
 def get_live_data(symbol):
-    """Son 1 günlük, 1 dakikalık periyotlarla canlı veri çeker."""
     data = yf.download(
         tickers=symbol,
         period="1d",
@@ -18,7 +17,6 @@ def get_live_data(symbol):
     return data
 
 def get_historical_data(symbol):
-    """Model eğitimi için son 90 günlük günlük veriyi çeker."""
     data = yf.download(
         tickers=symbol,
         period="90d",

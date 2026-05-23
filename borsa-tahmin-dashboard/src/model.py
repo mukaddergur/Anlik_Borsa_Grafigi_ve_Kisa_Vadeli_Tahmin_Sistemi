@@ -3,7 +3,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 def train_model(df):
-    """Zaman serisi sırasını bozmadan Random Forest modelini eğitir."""
     features = [
         "Close", "Daily_Return", "MA_7", "MA_14", 
         "MA_30", "Volatility_7", "Volume_Change", "Price_Range"
